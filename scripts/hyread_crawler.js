@@ -2,7 +2,7 @@ const request = require('request');
 const cheerio = require("cheerio");
 
 module.exports = {
-  run:function (){
+  run:function (keyword){
     list = {
         "虎科": "https:\/\/nfu.ebook.hyread.com.tw\/",
         "台中": "https:\/\/taichunggov.ebook.hyread.com.tw\/",
@@ -19,7 +19,6 @@ module.exports = {
 
     for (var key in list) {
         url = get_modify_url(list[key], keyword);
-        console.log(url);
         get_html(url, key);
     }
   },
@@ -44,6 +43,6 @@ function get_html(url, key, ) {
 }
 
 function get_modify_url(url, keyword) {
-  keyword = encodeURI(keyword);
+  var keyword = encodeURI(keyword);
   return url + 'searchList.jsp?search_field=FullText&search_input=' + keyword
 }

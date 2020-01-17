@@ -2,3 +2,4 @@
 node_modules
 scripts/bundle.js
 test/test_bundle.js
+logs.txt
