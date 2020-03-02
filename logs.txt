@@ -2,6 +2,8 @@
 程式改名為BookSearch
 重構架構
 
+新增google，tazze，tenlong，nfu等搜尋結果，但是因為安全訪問問題吧(?)tazze，nfu無法搜尋結果，所以直接用網址的方式呈現就好
+
 2020.01.14
 重新再找一次nodejs 開發chrome
 最後解決方法
